@@ -1,0 +1,28 @@
+Algorithm 1
+
+var maxSum
+
+For i in Array
+{
+	For j in Array - j will start out to be + 1 of i
+	{
+		Sum values from i to j (this is a for loop... so O(N^3)?
+		Compare sum to maxSum. 
+			If it is bigger, change maxSum and continue to next j
+	}
+}
+
+Algorithm 2
+
+var maxSum 
+var currentSum
+For i in Array
+{
+	set current sum to the first value of array, which is i. 
+	For j in Array - j will start out to be + 1 of i
+	{
+		currentSum = j + currentSum (this is not a for loop... so O(N^2)?
+		Compare sum to maxSum, if it is bigger change maxSum
+
+	}
+}
